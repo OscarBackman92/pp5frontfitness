@@ -10,10 +10,8 @@ const Register = () => {
         try {
             const response = await register({ email, password });
             console.log('Registration successful', response);
-            // Handle successful registration (e.g., redirect to login)
         } catch (error) {
             console.error('Registration failed', error);
-            // Handle error
         }
     };
 

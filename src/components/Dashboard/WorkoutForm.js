@@ -11,10 +11,8 @@ const WorkoutForm = () => {
         try {
             const response = await createWorkout({ workout_type: workoutType, duration, calories });
             console.log('Workout created', response);
-            // Handle successful workout creation (e.g., reset form or update list)
         } catch (error) {
             console.error('Workout creation failed', error);
-            // Handle error
         }
     };
 

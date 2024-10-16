@@ -10,10 +10,8 @@ const Login = () => {
         try {
             const response = await login({ email, password });
             console.log('Login successful', response);
-            // Handle successful login (e.g., store token, redirect)
         } catch (error) {
             console.error('Login failed', error);
-            // Handle error
         }
     };
 
