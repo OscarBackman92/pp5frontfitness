@@ -14,8 +14,9 @@ const App = () => {
                 <Route path="/" element={<h1>Welcome to the Fitness Tracker</h1>} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/" element={<WorkoutList />} />
+                <Route path="/dashboard" element={<Dashboard />}>
+                <Route path="workouts" element={<WorkoutList />} />
+                </Route>
             </Routes>
         </Router>
     );
